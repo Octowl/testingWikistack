@@ -3,7 +3,18 @@
 {% block content %}
   <h3>Pages</h3>
   <hr>
+  <form method="GET" action="/wiki/search">
+    <input type="text" name="search" />
+    <button type="submit">Search</button>
+  </form>
+  <hr>
   <ul class="list-unstyled">
-    <!-- PLACEHOLDER LIST OF PAGES -->
+    <ul>
+      {% for page in pages %}
+      <li>
+        {{ page | pageLink }}
+      </li>
+      {% endfor %}
+    </ul>
   </ul>
 {% endblock %}
