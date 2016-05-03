@@ -15,4 +15,3 @@ Promise.all([
   });
 })
 .catch(console.error);
-
