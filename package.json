@@ -19,6 +19,7 @@
     "chai": "^3.5.0",
     "chai-spies": "^0.7.1",
     "mocha": "^2.4.5",
-    "nodemon": "^1.9.2"
+    "nodemon": "^1.9.2",
+    "supertest": "^1.2.0"
   }
 }
